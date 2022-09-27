@@ -1,0 +1,18 @@
+{% block body %}
+
+<form method="POST" , enctype="multipart/form-data">
+    {% csrf_token %}
+    <div class="container">
+        <h1 class="text-center my-3">Edit Post</h1>
+
+        <div>
+            {{edit_blog.as_p}}
+        </div>
+
+
+        <input type="submit" value="Edit" class='btn btn-success'>
+    </div>
+
+</form>
+
+{% endblock %}
